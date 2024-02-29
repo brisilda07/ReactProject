@@ -8,8 +8,8 @@ class Footer extends Component {
         return (
            <Fragment>
                <Row className="footerSection">
-                   <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px', textAlign:'center'}}>
-                       <Typography.Title className="footerName" level={2}>Follow Us</Typography.Title>
+                   <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px'}}>
+                       <Typography.Title className="footerName" style={{textAlign:'center'}} level={2}>Follow Us</Typography.Title>
                        <div className="socialContainer" >
                            <a className="facebook social" href="" ><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
                            <a className="youtube social" href=""><FontAwesomeIcon icon={faYoutube} size="2x"/></a>
@@ -17,7 +17,7 @@ class Footer extends Component {
                        </div>
                    </Col>
 
-                   <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px', textAlign:'center'}}>
+                   <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px'}}>
                        <Typography.Title className="footerName" level={2}>Address</Typography.Title>
                        <p  className="footerDescription">
                            6522 Baltimore National Pike CatonsVille<br/>
@@ -25,14 +25,14 @@ class Footer extends Component {
                            <FontAwesomeIcon icon={faPhone} /> Phone : 434343434<br/></p>
                    </Col>
 
-                   <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px', textAlign:'center'}}>
+                   <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px'}}>
                        <Typography.Title  className="footerName" level={2}>Information</Typography.Title>
                        <a className="footerLink" href="" >About Me</a><br/>
                        <a className="footerLink" href="" >Company Profile</a><br/>
                        <a className="footerLink" href="" >Contact Us</a><br/>
                    </Col>
 
-                   <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px', textAlign:'center'}}>
+                   <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px'}}>
                        <Typography.Title  className="footerName" level={2}>Policy</Typography.Title>
                        <a className="footerLink" href="" >Refund Policy</a><br/>
                        <a className="footerLink" href="" >Terms And Conditions</a><br/>

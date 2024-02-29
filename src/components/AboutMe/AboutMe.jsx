@@ -21,25 +21,27 @@ class AboutMe extends Component {
 
     render() {
         return (
+            <div style={{ padding: '0 10%' }}>
             <Fragment>
                 <Typography.Title style={{ textAlign: 'center' }} className="serviceMainTitle" level={1}>ABOUT ME</Typography.Title>
                 <br /><br />
                 <div className="bottom"></div>
                 <Row>
-                    <Col span={12}>
+                    <Col lg={12} md={12} sm={24}>
                         <div className="aboutMeImage">
                             <Image className="aboutImg" src={face} />
                         </div>
                     </Col>
-                    <Col span={12}>
-                        <div className="aboutMeBody" >
-                            <Typography.Title  className="aboutMeDetails" level={2}>HI There, I'm</Typography.Title>
-                            <Typography.Title  className="aboutMeTitle" level={2}>Kazi Ariyan</Typography.Title>
-                            <Typography.Title  className="aboutMeDetails" level={3}>Work as <span id="myElement2"></span></Typography.Title>
+                    <Col lg={12} md={12} sm={24}>
+                        <div className="aboutMeBody">
+                            <Typography.Title className="aboutMeDetails" level={2}>HI There, I'm</Typography.Title>
+                            <Typography.Title className="aboutMeTitle" level={2}>Kazi Ariyan</Typography.Title>
+                            <Typography.Title className="aboutMeDetails" level={3}>Work as <span id="myElement2"></span></Typography.Title>
                         </div>
                     </Col>
                 </Row>
             </Fragment>
+            </div>
         );
     }
 }

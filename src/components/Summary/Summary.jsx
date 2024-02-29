@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import { Button, Col, Row, Typography, Card } from 'antd';
+import { Col, Row, Typography, Card } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare, faGlobe, faLaptop, faStar } from '@fortawesome/free-solid-svg-icons';
-import CountUp from 'react-countup';
+import { faGlobe, faLaptop, faStar, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { InView } from 'react-intersection-observer';
+import CountUp from 'react-countup';
 
 class Summary extends Component {
     render() {
@@ -12,9 +12,9 @@ class Summary extends Component {
                 <Row className="summaryBanner">
                     <div className="summaryBannerOverlay">
                         <Row justify="center" style={{ textAlign: 'center' }}>
-                            <Col span={16}>
+                            <Col lg={16} md={24} sm={24}>
                                 <Row className="countSection">
-                                    <Col span={8}>
+                                    <Col lg={8} md={8} sm={24}>
                                         <FontAwesomeIcon className="iconProject" icon={faGlobe} />
                                         <InView triggerOnce>
                                             {({ inView, ref }) => (
@@ -32,7 +32,7 @@ class Summary extends Component {
                                             <hr style={{ backgroundColor: 'white', width: '50px', border: 'none', height: '1px' }} />
                                         </div>
                                     </Col>
-                                    <Col span={8}>
+                                    <Col lg={8} md={8} sm={24}>
                                         <FontAwesomeIcon className="iconProject" icon={faLaptop} />
                                         <InView triggerOnce>
                                             {({ inView, ref }) => (
@@ -50,7 +50,7 @@ class Summary extends Component {
                                             <hr style={{ backgroundColor: 'white', width: '50px', border: 'none', height: '1px' }} />
                                         </div>
                                     </Col>
-                                    <Col span={8}>
+                                    <Col lg={8} md={8} sm={24}>
                                         <FontAwesomeIcon className="iconProject" icon={faStar} />
                                         <InView triggerOnce>
                                             {({ inView, ref }) => (
@@ -70,7 +70,7 @@ class Summary extends Component {
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col span={8}>
+                            <Col lg={8} md={24} sm={24}>
                                 <Card className="workCard">
                                     <Typography.Title className="cardTitle" level={1}>What I Have Achieved</Typography.Title>
                                     <p className="cardSubTitle"><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> Requirement Gathering</p>

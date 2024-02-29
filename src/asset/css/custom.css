@@ -65,7 +65,7 @@ body {
     box-shadow: 0 0 16px 0 rgb(4, 55, 105,  0.2);
 }
 .serviceName{
-    color: #051b35;
+    color: #051b35 !important;
     margin-top: 1rem;
     font-family: Raleway, sans-serif;
     font-size: 22px;
@@ -74,11 +74,13 @@ body {
 }
 
 .serviceDescription{
-    color: #051b35;
+    color: #051b35 ;
     margin-top: 1rem;
     font-family: Raleway, sans-serif;
     font-size: 15px;
     font-weight: 400;
+    text-align: justify;
+    align-content: center;
 }
 .serviceMainTitle{
     color: #051b35;
@@ -100,12 +102,14 @@ body {
 .navTitle{
     font-family: 'Monserrat', sans-serif;
     color: #ffffff !important;
+    font-weight: 700;
     font-size: 30px;
 }
 
 .navTitleScroll{
-    font-family: Monserrat, sans-serif;
+    font-family: 'Monserrat', sans-serif;
     color: #051b35 !important;
+    font-weight: 700;
     font-size: 30px;
 }
 
@@ -114,7 +118,7 @@ body {
     -moz-transition: background-color 400ms linear;
     -o-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
-    background-color: black !important;
+    background-color: #051b35;
 }
 
 .navBackgroundScroll{
@@ -122,13 +126,14 @@ body {
     -moz-transition: background-color 400ms linear;
     -o-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
-    background-color: #ffffff !important;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.3) !important;
 }
 .navItem{
     text-decoration: none !important;
     font-family: 'Monserrat', sans-serif;
-    color: #ffffff !important;
-    font-weight: 400;
+    color: #ffffff ;
+    font-weight: 700;
     font-size: 16px;
 }
 .navItemScroll{
@@ -191,7 +196,7 @@ body {
     width: 25rem;
     margin-top: 15%;
     padding: 10px 10px 10px 10px;
-    border-radius: 3px;
+    border-radius: 3px ;
 }
 
 .iconBullent{
@@ -206,7 +211,7 @@ body {
 
 .projectCard{
     background-color: white;
-    width: 22em;
+    width: 25em !important;
     border-radius: 0.6em;
     margin: 1em;
     cursor: pointer;
@@ -241,7 +246,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 300px;
+
 }
 .aboutImg{
     height: 100%;
@@ -251,8 +256,8 @@ body {
     height: 100%;
     flex-direction: column;
     margin-top: 8rem;
-    text-align: left ;
-    margin-left: 150px;
+    text-align: center ;
+
 }
 
 .aboutMeDetails{
@@ -274,6 +279,10 @@ color: #051b35;
     top: 0;
     z-index: 1000;
     width: 100%; /* Ensure full width */
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
 }
 .footerSection{
     margin-top: 5rem;
@@ -286,7 +295,7 @@ color: #051b35;
     font-family: 'Raleway', sans-serif ;
     font-size: 22px;
     font-weight: 600;
-    text-align: center;
+
 
 }
 
@@ -321,7 +330,7 @@ a.twitter{
     font-family: 'Raleway', sans-serif ;
     font-size: 15px;
     font-weight: 600;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
 }
 .footerLink{
@@ -330,8 +339,9 @@ a.twitter{
     font-size: 14px;
     font-weight: 600;
     color: white;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
+
 
 
 }
@@ -359,4 +369,32 @@ a.twitter{
 .copyrightLink:hover{
     text-decoration: none;
     color: white;
+}
+
+.topFixedPage{
+    background-image: url("../image/page.png") ;
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.topPageOverlay{
+    position: absolute;
+    min-height: 350px;
+    width: 100%;
+    background: rgb(19, 1, 102, 0.7);
+}
+
+.topContentPage{
+    margin-top: 8em;
+}
+
+.topPageOverlay .topPageTitle{
+    font-family: Monserrat, sans-serif;
+    font-weight: 700 !important;
+    color: #ffee00 !important;
+    font-size: 40px;
 }
