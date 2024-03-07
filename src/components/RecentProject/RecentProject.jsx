@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Button, Card, Col, Row, Typography } from 'antd';
 import '../../asset/css/custom.css';
+import {Link, NavLink} from "react-router-dom";
 
 class RecentProject extends Component {
     render() {
@@ -25,7 +26,9 @@ class RecentProject extends Component {
                                 description={<Typography.Text className="serviceDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</Typography.Text>}
                             />
                             <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                                <Button type="primary">Visit Website</Button>
+                                <Button type="primary">
+                                    <Link className="link-style" to="/projectDetails" >View More</Link>
+                                </Button>
                             </div>
                         </Card>
                     </Col>
@@ -41,7 +44,9 @@ class RecentProject extends Component {
                                 description={<Typography.Text className="serviceDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</Typography.Text>}
                             />
                             <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                                <Button type="primary">Visit Website</Button>
+                                <Button type="primary">
+                                    <Link className="link-style" to="/projectDetails" >View More</Link>
+                                </Button>
                             </div>
                         </Card>
                     </Col>
@@ -57,7 +62,9 @@ class RecentProject extends Component {
                                 description={<Typography.Text className="serviceDescription">Some quick example text to build on the card title and make up the bulk of the card's content.</Typography.Text>}
                             />
                             <div style={{ textAlign: 'center', marginTop: '16px' }}>
-                                <Button type="primary">Visit Website</Button>
+                                <Button type="primary" >
+                                    <Link className="link-style" to="/projectDetails" >View More</Link>
+                                </Button>
                             </div>
                         </Card>
                     </Col>

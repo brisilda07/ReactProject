@@ -3,6 +3,7 @@ import {Col, Row, Typography} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faFacebook, faYoutube, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import {NavLink} from "react-router-dom";
 class Footer extends Component {
     render() {
         return (
@@ -27,16 +28,16 @@ class Footer extends Component {
 
                    <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px'}}>
                        <Typography.Title  className="footerName" level={2}>Information</Typography.Title>
-                       <a className="footerLink" href="" >About Me</a><br/>
-                       <a className="footerLink" href="" >Company Profile</a><br/>
-                       <a className="footerLink" href="" >Contact Us</a><br/>
+                       <NavLink className="footerLink" to="/about" >About Me</NavLink><br/>
+                       <NavLink className="footerLink" to="/about" >Company Profile</NavLink><br/>
+                       <NavLink className="footerLink" to="/contact" >Contact Us</NavLink><br/>
                    </Col>
 
                    <Col lg={{ span: 6 }} md={{ span: 12 }} sm={{ span: 24 }} style={{padding:'48px'}}>
                        <Typography.Title  className="footerName" level={2}>Policy</Typography.Title>
-                       <a className="footerLink" href="" >Refund Policy</a><br/>
-                       <a className="footerLink" href="" >Terms And Conditions</a><br/>
-                       <a className="footerLink" href="" >Privacy Policy</a><br/>
+                       <NavLink className="footerLink" to="/refund" >Refund Policy</NavLink><br/>
+                       <NavLink className="footerLink" to="/terms" >Terms And Conditions</NavLink><br/>
+                       <NavLink className="footerLink" to="/privacy" >Privacy Policy</NavLink><br/>
                    </Col>
                </Row>
 

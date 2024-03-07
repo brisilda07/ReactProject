@@ -8,6 +8,7 @@ import RecentProject from "../components/RecentProject/RecentProject";
 import Courses from "../components/Courses/Courses";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Footer from "../components/Footer/Footer";
+import Welcome from "../components/Welcome/Welcome";
 
 class HomePage extends Component {
     render() {
@@ -15,6 +16,7 @@ class HomePage extends Component {
             <Fragment>
                 <TopNavigation title="Easy Learning Page"/>
                 <TopBanner />
+                <Welcome />
                 <Services />
                 <Analysis />
                 <Summary />

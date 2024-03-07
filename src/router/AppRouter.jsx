@@ -9,6 +9,12 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import RefundDescription from "../components/RefundDescription/RefundDescription";
+import RefundPage from "../pages/RefundPage";
+import TermsPage from "../pages/TermsPage";
+import PrivacyPage from "../pages/PrivacyPage";
+import ProjectDetailPage from "../pages/ProjectDetailPage";
+import CourseDetailsPage from "../pages/CourseDetailsPage";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +41,26 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactPage/>
 },
+    {
+        path: "/refund",
+        element: <RefundPage/>
+    },
+    {
+        path: "/terms",
+        element: <TermsPage/>
+    },
+    {
+        path: "/privacy",
+        element: <PrivacyPage/>
+    },
+    {
+        path: "/projectDetails",
+        element: <ProjectDetailPage/>
+    },
+    {
+        path: "/coursedetails",
+        element: <CourseDetailsPage/>
+    }
 ]);
 class AppRouter extends Component {
 
