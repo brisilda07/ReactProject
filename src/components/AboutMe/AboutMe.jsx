@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { useEffect, Fragment } from 'react';
 import { Col, Image, Row, Typography } from 'antd';
 import face from '../../asset/image/face.png';
 import Typed from 'typed.js';
 
-class AboutMe extends Component {
-    componentDidMount() {
+const AboutMe = () => {
+    useEffect(() => {
         const options = {
             strings: ['Web Developer!', 'Online Instructor!'],
             typeSpeed: 50,
@@ -12,16 +12,15 @@ class AboutMe extends Component {
             showCursor: false,
         };
 
-        this.typed = new Typed('#myElement2', options);
-    }
+        const typed = new Typed('#myElement2', options);
 
-    componentWillUnmount() {
-        this.typed.destroy();
-    }
+        return () => {
+            typed.destroy();
+        };
+    }, []);
 
-    render() {
-        return (
-            <div style={{ padding: '0 10%' }}>
+    return (
+        <div style={{ padding: '0 10%' }}>
             <Fragment>
                 <Typography.Title style={{ textAlign: 'center' }} className="serviceMainTitle" level={1}>ABOUT ME</Typography.Title>
                 <br /><br />
@@ -41,9 +40,8 @@ class AboutMe extends Component {
                     </Col>
                 </Row>
             </Fragment>
-            </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default AboutMe;

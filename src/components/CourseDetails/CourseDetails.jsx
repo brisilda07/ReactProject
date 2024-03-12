@@ -1,18 +1,12 @@
-import React, {Component, Fragment} from 'react';
-import {Button, Col, Image, Row, Typography} from "antd";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faUser} from "@fortawesome/free-solid-svg-icons";
-import {faClock} from "@fortawesome/free-solid-svg-icons";
-import {faClipboard} from "@fortawesome/free-solid-svg-icons";
-import {faClone} from "@fortawesome/free-solid-svg-icons";
-import {faTags} from "@fortawesome/free-solid-svg-icons";
-import {faCheckSquare} from "@fortawesome/free-solid-svg-icons";
+import React, { Fragment } from 'react';
+import { Button, Col, Image, Row, Typography } from "antd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faClock, faClipboard, faClone, faTags, faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
-class CourseDetails extends Component {
-    render() {
-        return (
-            <Fragment>
-                <div style={{padding: '0 10%', marginTop:'48px' }}>
+const CourseDetails = () => {
+    return (
+        <Fragment>
+            <div style={{padding: '0 10%', marginTop:'48px' }}>
                 <Row>
                     <Col lg={16} md={12} sm={24}>
                         <Typography.Title level={1} className="courseDetailsText">Course Details</Typography.Title>
@@ -43,14 +37,13 @@ class CourseDetails extends Component {
                             </div>
                         </div>
                     </Col>
-
                 </Row>
-                </div>
+            </div>
 
-                <div style={{padding: '0 10%', marginTop:'48px' }}>
-                    <Row>
-                        <Col lg={12} md={12} sm={24}>
-                            <div className="widget-feature">
+            <div style={{padding: '0 10%', marginTop:'48px' }}>
+                <Row>
+                    <Col lg={12} md={12} sm={24}>
+                        <div className="widget-feature">
                             <Typography.Title level={1} className="courseDetailsText">Skill you need</Typography.Title>
                             <hr />
                             <ul>
@@ -61,38 +54,35 @@ class CourseDetails extends Component {
                                 <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />  Fringilla nulla   </li>
                                 <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} />  Fringilla nulla   </li>
                             </ul>
+                        </div>
+                    </Col >
+                    <Col lg={4} md={12} sm={24}>
+
+                    </Col>
+                    <Col lg={6} md={12} sm={24}>
+                        <div className="widget-feature">
+                            <Typography.Title level={4} className="widget-title">Course Features</Typography.Title>
+                            <hr />
+                            <ul>
+                                <li><FontAwesomeIcon className="iconBullent" icon={faUser} /> <span > Enrolled :</span> 1200 students</li>
+                                <li><FontAwesomeIcon className="iconBullent" icon={faClock} /> <span> Duration :</span> 2 hours</li>
+                                <li><FontAwesomeIcon className="iconBullent" icon={faClipboard} /> <span>  Lectures :</span> 8</li>
+                                <li><FontAwesomeIcon className="iconBullent" icon={faClone} /> <span>  Categories:</span> Technology</li>
+                                <li><FontAwesomeIcon className="iconBullent" icon={faTags} /> <span> Tags:</span> Android, JavaScript</li>
+                                <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> <span> Instructor:</span> Kazi Aryan</li>
+                            </ul>
+                            <div className="price-wrap " style={{textAlign:'center', justifyContent:'center'}}>
+                                <Typography.Title level={5} className="widget-title">Price:<span>$54.00</span></Typography.Title>
+                                <Button type="danger" style={{ backgroundColor: '#ffc107', borderColor: '#ffc107', color: '#212529' }}>
+                                    ENROLL COURSE
+                                </Button>
                             </div>
-                        </Col >
-                        <Col lg={4} md={12} sm={24}>
-
-                        </Col>
-                        <Col lg={6} md={12} sm={24}>
-                            <div className="widget-feature">
-                                <Typography.Title level={4} className="widget-title">Course Features</Typography.Title>
-                                <hr />
-                                <ul>
-                                    <li><FontAwesomeIcon className="iconBullent" icon={faUser} /> <span > Enrolled :</span> 1200 students</li>
-                                    <li><FontAwesomeIcon className="iconBullent" icon={faClock} /> <span> Duration :</span> 2 hours</li>
-                                    <li><FontAwesomeIcon className="iconBullent" icon={faClipboard} /> <span>  Lectures :</span> 8</li>
-                                    <li><FontAwesomeIcon className="iconBullent" icon={faClone} /> <span>  Categories:</span> Technology</li>
-                                    <li><FontAwesomeIcon className="iconBullent" icon={faTags} /> <span> Tags:</span> Android, JavaScript</li>
-                                    <li><FontAwesomeIcon className="iconBullent" icon={faCheckSquare} /> <span> Instructor:</span> Kazi Aryan</li>
-                                </ul>
-                                <div className="price-wrap " style={{textAlign:'center', justifyContent:'center'}}>
-                                    <Typography.Title level={5} className="widget-title">Price:<span>$54.00</span></Typography.Title>
-                                    <Button type="danger" style={{ backgroundColor: '#ffc107', borderColor: '#ffc107', color: '#212529' }}>
-                                        ENROLL COURSE
-                                    </Button>
-                                </div>
-                            </div>
-                        </Col >
-
-                    </Row>
-
-                </div>
-            </Fragment>
-        );
-    }
-}
+                        </div>
+                    </Col >
+                </Row>
+            </div>
+        </Fragment>
+    );
+};
 
 export default CourseDetails;
