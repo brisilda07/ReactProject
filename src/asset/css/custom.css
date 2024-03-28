@@ -246,6 +246,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    float: right;
 
 }
 .aboutImg{
@@ -255,8 +256,9 @@ body {
     width: 100%;
     height: 100%;
     flex-direction: column;
-    margin-top: 8rem;
-    text-align: center ;
+    margin-top: 10rem;
+
+    padding-left: 20%;
 
 }
 
@@ -550,6 +552,7 @@ margin-right: 30px;
 }
 .widget-feature{
     border: 1px solid #cbd6e2;
+
 }
 .widget-feature ul{
     padding: 0 25px 20px;
@@ -637,4 +640,21 @@ margin-right: 30px;
     font-family: Raleway, sans-serif;
     font-size: 15px;
     font-weight: 400;
+}
+
+.LoaderAnimation{
+    width: 140px;
+    height: 140px;
+}
+
+.desktopMenu {
+    display: none;
+}
+
+
+.notFound{
+    color: #051b35;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
 }

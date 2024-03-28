@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faLaptop, faStar, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { InView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
+import Zoom from 'react-reveal/Zoom'
 
 const Summary = () => {
     return (
@@ -13,25 +14,29 @@ const Summary = () => {
                     <Row justify="center" style={{ textAlign: 'center' }}>
                         <Col lg={16} md={24} sm={24}>
                             <Row className="countSection">
+
                                 <Col lg={8} md={8} sm={24}>
-                                    <FontAwesomeIcon className="iconProject" icon={faGlobe} />
-                                    <InView triggerOnce>
-                                        {({ inView, ref }) => (
-                                            <div ref={ref}>
-                                                {inView && (
-                                                    <Typography.Title level={1} className="countNumber">
-                                                        <CountUp start={0} end={35000} />
-                                                    </Typography.Title>
-                                                )}
-                                            </div>
-                                        )}
+                                    <Zoom top>
+                                        <FontAwesomeIcon className="iconProject" icon={faGlobe} />
+                                        <InView triggerOnce>
+                                            {({ inView, ref }) => (
+                                                <div ref={ref}>
+                                                    {inView && (
+                                                        <Typography.Title level={1} className="countNumber">
+                                                            <CountUp start={0} end={35000} />
+                                                        </Typography.Title>
+                                                    )}
+                                                </div>
+                                            )}
                                     </InView>
+                                    </Zoom>
                                     <Typography.Title level={4} className="countTitle">Student Worldwide</Typography.Title>
                                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                                         <hr style={{ backgroundColor: 'white', width: '50px', border: 'none', height: '1px' }} />
                                     </div>
                                 </Col>
                                 <Col lg={8} md={8} sm={24}>
+                                    <Zoom top>
                                     <FontAwesomeIcon className="iconProject" icon={faLaptop} />
                                     <InView triggerOnce>
                                         {({ inView, ref }) => (
@@ -44,12 +49,14 @@ const Summary = () => {
                                             </div>
                                         )}
                                     </InView>
+                                    </Zoom>
                                     <Typography.Title level={4} className="countTitle">Courses Published</Typography.Title>
                                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                                         <hr style={{ backgroundColor: 'white', width: '50px', border: 'none', height: '1px' }} />
                                     </div>
                                 </Col>
                                 <Col lg={8} md={8} sm={24}>
+                                    <Zoom top>
                                     <FontAwesomeIcon className="iconProject" icon={faStar} />
                                     <InView triggerOnce>
                                         {({ inView, ref }) => (
@@ -62,6 +69,7 @@ const Summary = () => {
                                             </div>
                                         )}
                                     </InView>
+                                    </Zoom>
                                     <Typography.Title level={4} className="countTitle">Student Reviews</Typography.Title>
                                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                                         <hr style={{ backgroundColor: 'white', width: '50px', border: 'none', height: '1px' }} />

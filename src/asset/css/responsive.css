@@ -1,0 +1,28 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .topTitle { font-size: 30px; }
+    .topSubTitle { font-size: 16px; }
+    .projectCard { width: 26em; margin-top: 150px; }
+    .aboutMeImage { width: 400px; height: 400px; }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .topTitle { font-size: 38px; }
+    .topSubTitle { font-size: 19px; }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Add your styles here */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Add your styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Add your styles here */
+}

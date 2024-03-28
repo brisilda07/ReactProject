@@ -84,4 +84,4 @@ const TopNavigation = ({ title }) => {
     );
 };
 
-export default TopNavigation;
+export default TopNavigation
